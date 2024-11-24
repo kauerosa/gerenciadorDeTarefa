@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- activity_adicionar_tarefa.xml -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AdicionarTarefaActivity">
+
+        <EditText
+            android:id="@+id/editTextNomeTarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome da Tarefa"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextDescricaoTarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição da Tarefa"
+            android:layout_below="@id/editTextNomeTarefa"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextDataTermino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data de Término"
+            android:layout_below="@id/editTextDescricaoTarefa"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/botaoSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:layout_below="@id/editTextDataTermino"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/botaoCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_below="@id/botaoSalvar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
